@@ -4,7 +4,8 @@
   "rules": {
     "prettier": [true, "prettier.config.js"],
     "interface-name": false,
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": false
   },
   "linterOptions": {
     "exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]
