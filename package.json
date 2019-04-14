@@ -13,9 +13,9 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "tslint:prettier-check": "tslint-config-prettier-check ./tslint.json",
-    "tslint": "tslint --format stylish ./src/**/*.{ts,tsx}",
-    "tslint:fix": "tslint --fix ./src/**/*.{ts,tsx}",
-    "prettier": "prettier --write ./src/**/*.{ts,tsx}",
+    "tslint": "tslint --format stylish ./src/{,**/}*.{ts,tsx}",
+    "tslint:fix": "tslint --fix ./src/{,**/}*.{ts,tsx}",
+    "prettier": "prettier --write ./src/{,**/}*.{ts,tsx}",
     "storybook": "start-storybook -p 6006"
   },
   "husky": {
