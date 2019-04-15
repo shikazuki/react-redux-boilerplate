@@ -1,4 +1,4 @@
-.Router_nav-links {
+.Navigation_nav-links {
   color: #fff;
   background-color: #272f3b;
   display: flex;
@@ -9,10 +9,10 @@
   padding-right: 2em;
 }
 
-.Router_link {
+.Navigation_link {
   padding: 4px 8px;
 }
 
-.Router_link > a {
+.Navigation_link > a {
   color: inherit;
 }

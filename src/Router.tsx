@@ -1,23 +1,13 @@
 import * as React from "react";
-import { BrowserRouter, Link, Route } from "react-router-dom";
-import App from "./App";
+import { BrowserRouter, Route } from "react-router-dom";
+import App from "./components/App/App";
+import { Navigation } from "./components/Navigation";
 import Counter from "./containers/Counter";
-import "./Router.css";
 
 export const Router = () => {
   return (
     <BrowserRouter>
-      <nav>
-        <div className="Router_nav-links">
-          <div className="Router_link">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="Router_link">
-            <Link to="/counter/">Counter</Link>
-          </div>
-        </div>
-      </nav>
-
+      <Navigation />
       <Route path="/" exact component={App} />
       <Route path="/counter/" component={Counter} />
     </BrowserRouter>
