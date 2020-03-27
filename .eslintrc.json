@@ -6,7 +6,8 @@
   "extends": [
     "plugin:jest/recommended",
     "plugin:react/recommended",
-    "standard"
+    "standard",
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -20,9 +21,10 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "jest"],
+  "plugins": ["react", "@typescript-eslint", "jest", "prettier"],
   "rules": {
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "prettier/prettier": "error"
   },
   "settings": {
     "react": {
