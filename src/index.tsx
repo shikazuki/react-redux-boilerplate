@@ -15,9 +15,9 @@ function Routing() {
         <Route path="/count" exact>
           <CounterContainer />
         </Route>
-          <Route path="/">
-              <App />
-          </Route>
+        <Route path="/">
+          <App />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
