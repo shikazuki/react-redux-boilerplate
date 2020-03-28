@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "../logo.svg";
 import "./App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function Home() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -23,17 +22,4 @@ function Home() {
     </div>
   );
 }
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  );
-}
-
 export default App;
