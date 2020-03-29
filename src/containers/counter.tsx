@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootReducerType } from "../store/modules";
 import { CounterActions } from "../store/modules/counter";
@@ -26,8 +26,8 @@ export function CounterContainer() {
   return (
     <Counter
       count={count}
-      increment={() => dispatch(CounterActions.increment())}
-      decrement={() => dispatch(CounterActions.decrement())}
+      increment={useCallback(() => dispatch(CounterActions.increment()), [dispatch])}
+      decrement={useCallback(() => dispatch(CounterActions.decrement()), [dispatch])}
     />
   );
 }
